@@ -14,6 +14,7 @@
 		556C294C1D4F8C150056489B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556C294B1D4F8C150056489B /* Assets.xcassets */; };
 		556C294F1D4F8C150056489B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556C294D1D4F8C150056489B /* LaunchScreen.storyboard */; };
 		556C29571D4F8D420056489B /* Heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 556C29561D4F8D420056489B /* Heros.plist */; };
+		55EAC7911D50D84900CA32B7 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAC7901D50D84900CA32B7 /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		556C294E1D4F8C150056489B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556C29501D4F8C150056489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556C29561D4F8D420056489B /* Heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Heros.plist; sourceTree = "<group>"; };
+		55EAC78F1D50D84900CA32B7 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		55EAC7901D50D84900CA32B7 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				556C29431D4F8C150056489B /* AppDelegate.m */,
 				556C29451D4F8C150056489B /* ViewController.h */,
 				556C29461D4F8C150056489B /* ViewController.m */,
+				55EAC78F1D50D84900CA32B7 /* Hero.h */,
+				55EAC7901D50D84900CA32B7 /* Hero.m */,
 				556C29481D4F8C150056489B /* Main.storyboard */,
 				556C294B1D4F8C150056489B /* Assets.xcassets */,
 				556C294D1D4F8C150056489B /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 				556C29471D4F8C150056489B /* ViewController.m in Sources */,
 				556C29441D4F8C150056489B /* AppDelegate.m in Sources */,
 				556C29411D4F8C150056489B /* main.m in Sources */,
+				55EAC7911D50D84900CA32B7 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +312,7 @@
 				556C29551D4F8C150056489B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "Hero.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) NSArray *heros;
 
 @end
 
 @implementation ViewController
+
+- (NSArray *)heros {
+    if (!_heros) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Heros" ofType:@"plist"];
+        NSArray *array = [NSArray arrayWithContentsOfFile:path];
+        NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:array.count];
+        for (NSDictionary *dict in array) {
+            Hero *hero = [Hero heroWithDict:dict];
+            [arrayM addObject:hero];
+        }
+        _heros = [arrayM copy];
+    }
+    return _heros;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
