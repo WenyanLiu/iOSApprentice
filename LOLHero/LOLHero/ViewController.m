@@ -41,4 +41,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.heros.count;
+}
+
+//- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+//    return 1;
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identifier = @"heroCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    }
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    Hero *hero = self.heros[indexPath.row];
+    cell.textLabel.text = hero.name;
+    cell.detailTextLabel.text = hero.intro;
+    cell.detailTextLabel.textColor = [UIColor orangeColor];
+    cell.imageView.image = [UIImage imageNamed:hero.icon];
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 @end
