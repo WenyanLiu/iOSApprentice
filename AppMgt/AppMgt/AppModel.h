@@ -1,5 +1,5 @@
 //
-//  App.h
+//  AppModel.h
 //  AppMgt
 //
 //  Created by 刘文炎 on 8/5/16.

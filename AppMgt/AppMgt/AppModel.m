@@ -1,12 +1,12 @@
 //
-//  App.m
+//  AppModel.m
 //  AppMgt
 //
 //  Created by 刘文炎 on 8/5/16.
 //  Copyright © 2016 F.V.Rockie. All rights reserved.
 //
 
-#import "App.h"
+#import "AppModel.h"
 
 @implementation App {
     UIImage *_image;

@@ -14,7 +14,9 @@
 		556EFA4F1D5460A0006F8773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556EFA4E1D5460A0006F8773 /* Assets.xcassets */; };
 		556EFA521D5460A0006F8773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556EFA501D5460A0006F8773 /* LaunchScreen.storyboard */; };
 		556EFA5A1D5460D2006F8773 /* Apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 556EFA591D5460D2006F8773 /* Apps.plist */; };
-		556EFA5D1D546168006F8773 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 556EFA5C1D546168006F8773 /* App.m */; };
+		556EFA5D1D546168006F8773 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 556EFA5C1D546168006F8773 /* AppModel.m */; };
+		556EFA601D5463CD006F8773 /* AppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 556EFA5F1D5463CD006F8773 /* AppView.m */; };
+		556EFA621D546413006F8773 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556EFA611D546413006F8773 /* AppView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,11 @@
 		556EFA511D5460A0006F8773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556EFA531D5460A0006F8773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556EFA591D5460D2006F8773 /* Apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Apps.plist; sourceTree = "<group>"; };
-		556EFA5B1D546168006F8773 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
-		556EFA5C1D546168006F8773 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		556EFA5B1D546168006F8773 /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
+		556EFA5C1D546168006F8773 /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		556EFA5E1D5463CD006F8773 /* AppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppView.h; sourceTree = "<group>"; };
+		556EFA5F1D5463CD006F8773 /* AppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppView.m; sourceTree = "<group>"; };
+		556EFA611D546413006F8773 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +73,11 @@
 				556EFA481D5460A0006F8773 /* ViewController.h */,
 				556EFA491D5460A0006F8773 /* ViewController.m */,
 				556EFA591D5460D2006F8773 /* Apps.plist */,
-				556EFA5B1D546168006F8773 /* App.h */,
-				556EFA5C1D546168006F8773 /* App.m */,
+				556EFA5B1D546168006F8773 /* AppModel.h */,
+				556EFA5C1D546168006F8773 /* AppModel.m */,
+				556EFA5E1D5463CD006F8773 /* AppView.h */,
+				556EFA611D546413006F8773 /* AppView.xib */,
+				556EFA5F1D5463CD006F8773 /* AppView.m */,
 				556EFA4B1D5460A0006F8773 /* Main.storyboard */,
 				556EFA4E1D5460A0006F8773 /* Assets.xcassets */,
 				556EFA501D5460A0006F8773 /* LaunchScreen.storyboard */,
@@ -147,6 +155,7 @@
 				556EFA5A1D5460D2006F8773 /* Apps.plist in Resources */,
 				556EFA521D5460A0006F8773 /* LaunchScreen.storyboard in Resources */,
 				556EFA4F1D5460A0006F8773 /* Assets.xcassets in Resources */,
+				556EFA621D546413006F8773 /* AppView.xib in Resources */,
 				556EFA4D1D5460A0006F8773 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				556EFA4A1D5460A0006F8773 /* ViewController.m in Sources */,
-				556EFA5D1D546168006F8773 /* App.m in Sources */,
+				556EFA5D1D546168006F8773 /* AppModel.m in Sources */,
+				556EFA601D5463CD006F8773 /* AppView.m in Sources */,
 				556EFA471D5460A0006F8773 /* AppDelegate.m in Sources */,
 				556EFA441D5460A0006F8773 /* main.m in Sources */,
 			);
