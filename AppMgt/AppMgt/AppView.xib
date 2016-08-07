@@ -21,9 +21,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5j-QQ-B6h">
-                    <rect key="frame" x="15" y="75" width="50" height="15"/>
+                    <rect key="frame" x="0.0" y="75" width="80" height="15"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <state key="normal" title="下载" backgroundImage="Btn">
+                    <state key="normal" title="Download" backgroundImage="Btn">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted" backgroundImage="BtnHighlighted"/>

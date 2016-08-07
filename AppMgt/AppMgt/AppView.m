@@ -20,7 +20,7 @@
 @implementation AppView
 
 - (IBAction)dlBtnOnclick:(UIButton *)sender {
-    if ([self.delegate respondsToSelector:@selector(dlBtnOnclick:)]) {
+    if ([self.delegate respondsToSelector:@selector(dlClickWithBtn:)]) {
         [self.delegate dlClickWithBtn:sender];
     }
 }
