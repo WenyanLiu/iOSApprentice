@@ -43,6 +43,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
                                 <state key="normal" title="Icon" image="movie_ygbh" backgroundImage="center_img"/>
+                                <connections>
+                                    <action selector="imgBtnOnclick" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKq-Ri-0yJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="COq-Ts-We1">
                                 <rect key="frame" x="0.0" y="100" width="70" height="36"/>
@@ -50,6 +53,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left"/>
                                 <state key="highlighted" image="icon_tip" backgroundImage="btn_left_highlighted"/>
+                                <connections>
+                                    <action selector="tipBtnOnclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6T-3V-S7n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LBw-Pr-Kd3">
                                 <rect key="frame" x="0.0" y="166" width="70" height="36"/>
@@ -57,6 +63,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="帮助" image="icon_help" backgroundImage="btn_left"/>
                                 <state key="highlighted" image="icon_help" backgroundImage="btn_left_highlighted"/>
+                                <connections>
+                                    <action selector="helpBtnOnclick" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4U-pQ-jc4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XNW-DO-B44">
                                 <rect key="frame" x="250" y="100" width="70" height="36"/>
@@ -64,6 +73,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="大图" image="icon_img" backgroundImage="btn_right"/>
                                 <state key="highlighted" image="icon_img" backgroundImage="btn_right_highlighted"/>
+                                <connections>
+                                    <action selector="imgBtnOnclick" destination="BYZ-38-t0r" eventType="touchUpInside" id="9XR-Lf-t9i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0uB-b3-ZVd">
                                 <rect key="frame" x="250" y="166" width="70" height="36"/>
@@ -71,6 +83,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="下一题" backgroundImage="btn_right"/>
                                 <state key="highlighted" backgroundImage="btn_right_highlighted"/>
+                                <connections>
+                                    <action selector="nextBtnOnclick" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOH-wn-rdU"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="qYL-9j-Lif">
                                 <rect key="frame" x="20" y="234" width="280" height="35"/>
@@ -86,6 +101,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="ansView" destination="qYL-9j-Lif" id="U5w-SI-6pf"/>
+                        <outlet property="coinBtn" destination="7QT-Rk-lIS" id="6d2-Rr-wSB"/>
+                        <outlet property="iconBtn" destination="ctQ-7N-iDL" id="Fod-L9-IAx"/>
+                        <outlet property="indexLabel" destination="L1a-sz-tPh" id="2Of-8b-3WM"/>
+                        <outlet property="nextBtn" destination="0uB-b3-ZVd" id="tzE-O2-DUQ"/>
+                        <outlet property="optView" destination="aCR-vf-skT" id="ujP-98-C7C"/>
+                        <outlet property="titleLabel" destination="3MB-Vm-Ajm" id="wzR-XG-Cqw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
