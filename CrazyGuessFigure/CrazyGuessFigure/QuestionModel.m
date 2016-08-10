@@ -6,9 +6,9 @@
 //  Copyright © 2016 F.V.Rockie. All rights reserved.
 //
 
-#import "QueationModel.h"
+#import "QuestionModel.h"
 
-@implementation QueationModel {
+@implementation QuestionModel {
     UIImage *_image;
 }
 

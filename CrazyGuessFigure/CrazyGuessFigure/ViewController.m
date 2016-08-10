@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QuestionModel.h"
 
 @interface ViewController ()
 
@@ -33,6 +34,25 @@
 @end
 
 @implementation ViewController
+
+- (NSArray *)questions {
+    if (nil == _questions) {
+        _questions = [QuestionModel questions];
+    }
+    return _questions;
+}
+
+- (UIButton *)mask {
+    if (nil == _mask) {
+        _mask = [[UIButton alloc] init];
+        _mask.frame = self.view.bounds;
+        _mask.alpha = 0.0;
+        _mask.backgroundColor = [UIColor blackColor];
+        [_mask addTarget:self action:@selector(imgBtnOnclick) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:_mask];
+    }
+    return _mask;
+}
 
 - (IBAction)tipBtnOnclick {
 }

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface QueationModel : NSObject
+@interface QuestionModel : NSObject
 
 @property (nonatomic, copy) NSString *title;
 

@@ -14,7 +14,7 @@
 		557B92B31D58DACB0046B6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557B92B21D58DACB0046B6F5 /* Assets.xcassets */; };
 		557B92B61D58DACB0046B6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557B92B41D58DACB0046B6F5 /* LaunchScreen.storyboard */; };
 		557B92BE1D58DB070046B6F5 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557B92BD1D58DB070046B6F5 /* Questions.plist */; };
-		557B92C11D58DB780046B6F5 /* QueationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557B92C01D58DB780046B6F5 /* QueationModel.m */; };
+		557B92C11D58DB780046B6F5 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 557B92C01D58DB780046B6F5 /* QuestionModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		557B92B51D58DACB0046B6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557B92B71D58DACB0046B6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557B92BD1D58DB070046B6F5 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
-		557B92BF1D58DB780046B6F5 /* QueationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueationModel.h; sourceTree = "<group>"; };
-		557B92C01D58DB780046B6F5 /* QueationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueationModel.m; sourceTree = "<group>"; };
+		557B92BF1D58DB780046B6F5 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
+		557B92C01D58DB780046B6F5 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				557B92AC1D58DACB0046B6F5 /* ViewController.h */,
 				557B92AD1D58DACB0046B6F5 /* ViewController.m */,
 				557B92AF1D58DACB0046B6F5 /* Main.storyboard */,
-				557B92BF1D58DB780046B6F5 /* QueationModel.h */,
-				557B92C01D58DB780046B6F5 /* QueationModel.m */,
+				557B92BF1D58DB780046B6F5 /* QuestionModel.h */,
+				557B92C01D58DB780046B6F5 /* QuestionModel.m */,
 				557B92B21D58DACB0046B6F5 /* Assets.xcassets */,
 				557B92B41D58DACB0046B6F5 /* LaunchScreen.storyboard */,
 				557B92BD1D58DB070046B6F5 /* Questions.plist */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557B92AE1D58DACB0046B6F5 /* ViewController.m in Sources */,
-				557B92C11D58DB780046B6F5 /* QueationModel.m in Sources */,
+				557B92C11D58DB780046B6F5 /* QuestionModel.m in Sources */,
 				557B92AB1D58DACB0046B6F5 /* AppDelegate.m in Sources */,
 				557B92A81D58DACB0046B6F5 /* main.m in Sources */,
 			);
@@ -312,6 +312,7 @@
 				557B92BC1D58DACB0046B6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
