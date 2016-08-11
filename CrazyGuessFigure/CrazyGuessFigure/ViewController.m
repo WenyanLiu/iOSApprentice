@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "QuestionModel.h"
 
+CGFloat const imgW = 150;
+
+#define screenW [UIScreen mainScreen].bounds.size.width
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *indexLabel;
@@ -61,6 +65,23 @@
 }
 
 - (IBAction)imgBtnOnclick {
+    [self.view bringSubviewToFront:self.iconBtn];
+    if (0 == self.mask.alpha) {
+        CGFloat scaleX = screenW / imgW;
+        CGFloat scaleY = scaleX;
+        CGFloat translateY = self.iconBtn.frame.origin.y / scaleX;
+        [UIView animateWithDuration:1.0 animations:^{
+            self.iconBtn.transform = CGAffineTransformMakeScale(scaleX, scaleY);
+            self.iconBtn.transform = CGAffineTransformTranslate(self.iconBtn.transform, 0, translateY);
+            self.mask.alpha = 0.5;
+            
+        }];
+    } else {
+        [UIView animateWithDuration:1.0 animations:^{
+            self.iconBtn.transform = CGAffineTransformIdentity;
+            self.mask.alpha = 0.0;
+        }];
+    }
 }
 
 - (IBAction)nextBtnOnclick {
