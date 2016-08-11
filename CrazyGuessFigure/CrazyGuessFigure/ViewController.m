@@ -65,7 +65,6 @@ CGFloat const imgW = 150;
 }
 
 - (IBAction)imgBtnOnclick {
-    [self.view bringSubviewToFront:self.iconBtn];
     if (0 == self.mask.alpha) {
         CGFloat scaleX = screenW / imgW;
         CGFloat scaleY = scaleX;
@@ -74,7 +73,7 @@ CGFloat const imgW = 150;
             self.iconBtn.transform = CGAffineTransformMakeScale(scaleX, scaleY);
             self.iconBtn.transform = CGAffineTransformTranslate(self.iconBtn.transform, 0, translateY);
             self.mask.alpha = 0.5;
-            
+            [self.view bringSubviewToFront:self.iconBtn];
         }];
     } else {
         [UIView animateWithDuration:1.0 animations:^{
