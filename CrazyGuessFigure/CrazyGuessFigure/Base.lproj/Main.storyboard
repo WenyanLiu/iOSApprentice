@@ -54,7 +54,7 @@
                                 <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left"/>
                                 <state key="highlighted" image="icon_tip" backgroundImage="btn_left_highlighted"/>
                                 <connections>
-                                    <action selector="tipBtnOnclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6T-3V-S7n"/>
+                                    <action selector="tipBtnOnclick" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfl-XI-QlF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LBw-Pr-Kd3">
@@ -88,12 +88,12 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="qYL-9j-Lif">
-                                <rect key="frame" x="20" y="234" width="280" height="35"/>
+                                <rect key="frame" x="0.0" y="234" width="320" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="aCR-vf-skT">
-                                <rect key="frame" x="20" y="277" width="280" height="183"/>
+                                <rect key="frame" x="0.0" y="297" width="320" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
