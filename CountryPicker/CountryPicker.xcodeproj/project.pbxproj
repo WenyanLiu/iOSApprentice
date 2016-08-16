@@ -29,6 +29,8 @@
 		550B09961D620DA6001A351E /* ying.gif in Resources */ = {isa = PBXBuildFile; fileRef = 550B09881D620DA6001A351E /* ying.gif */; };
 		550B09971D620DA6001A351E /* zhongguo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 550B09891D620DA6001A351E /* zhongguo.jpg */; };
 		550B099A1D620DDB001A351E /* CountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B09991D620DDB001A351E /* CountryModel.m */; };
+		550B099D1D62131D001A351E /* CountryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550B099C1D62131D001A351E /* CountryView.m */; };
+		550B099F1D621333001A351E /* CountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550B099E1D621333001A351E /* CountryView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,9 @@
 		550B09891D620DA6001A351E /* zhongguo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zhongguo.jpg; sourceTree = "<group>"; };
 		550B09981D620DDB001A351E /* CountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryModel.h; sourceTree = "<group>"; };
 		550B09991D620DDB001A351E /* CountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryModel.m; sourceTree = "<group>"; };
+		550B099B1D62131D001A351E /* CountryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryView.h; sourceTree = "<group>"; };
+		550B099C1D62131D001A351E /* CountryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryView.m; sourceTree = "<group>"; };
+		550B099E1D621333001A351E /* CountryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,9 @@
 				550B09691D620D5A001A351E /* ViewController.h */,
 				550B096A1D620D5A001A351E /* ViewController.m */,
 				550B09981D620DDB001A351E /* CountryModel.h */,
+				550B099B1D62131D001A351E /* CountryView.h */,
+				550B099C1D62131D001A351E /* CountryView.m */,
+				550B099E1D621333001A351E /* CountryView.xib */,
 				550B09991D620DDB001A351E /* CountryModel.m */,
 				550B096C1D620D5A001A351E /* Main.storyboard */,
 				550B096F1D620D5A001A351E /* Assets.xcassets */,
@@ -195,6 +203,7 @@
 				550B098A1D620DA6001A351E /* agt.gif in Resources */,
 				550B098B1D620DA6001A351E /* baxi.gif in Resources */,
 				550B09971D620DA6001A351E /* zhongguo.jpg in Resources */,
+				550B099F1D621333001A351E /* CountryView.xib in Resources */,
 				550B09941D620DA6001A351E /* xiby.gif in Resources */,
 				550B09961D620DA6001A351E /* ying.gif in Resources */,
 				550B09931D620DA6001A351E /* wlgui.gif in Resources */,
@@ -216,6 +225,7 @@
 			files = (
 				550B096B1D620D5A001A351E /* ViewController.m in Sources */,
 				550B09681D620D5A001A351E /* AppDelegate.m in Sources */,
+				550B099D1D62131D001A351E /* CountryView.m in Sources */,
 				550B099A1D620DDB001A351E /* CountryModel.m in Sources */,
 				550B09651D620D5A001A351E /* main.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CountryModel.h"
+#import "CountryView.h"
 
 @interface ViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -50,7 +51,16 @@
 #pragma mark - UIPickerViewDelegate
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
-    return view;
+    CountryView *countryView = (CountryView *)view;
+    if (!countryView) {
+        countryView = [CountryView countryView];
+    }
+    countryView.countryModel = self.dataArr[row];
+    return countryView;
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+    return [CountryView rowHeight];
 }
 
 - (void)didReceiveMemoryWarning {
