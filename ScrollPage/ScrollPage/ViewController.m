@@ -18,6 +18,8 @@ CGFloat pageCtrlWidth = 200;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl *pageCtrl;
 
+@property (nonatomic, strong) NSTimer *timer;
+
 @end
 
 @implementation ViewController
@@ -27,6 +29,7 @@ CGFloat pageCtrlWidth = 200;
     // Do any additional setup after loading the view, typically from a nib.
     [self initScrollView];
     [self initPageControl];
+    [self addTimer];
 }
 
 - (void)initScrollView {
@@ -48,6 +51,42 @@ CGFloat pageCtrlWidth = 200;
     self.pageCtrl.pageIndicatorTintColor = [UIColor orangeColor];
     self.pageCtrl.currentPageIndicatorTintColor = [UIColor redColor];
     [self.view insertSubview:self.pageCtrl aboveSubview:self.scrollView];
+}
+
+- (void)addTimer {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)nextPage {
+    NSInteger page = self.pageCtrl.currentPage;
+    page++;
+    if (page == pageCount) {
+        page = 0;
+    }
+    CGPoint point = CGPointMake(screenW * page, 0);
+    [self.scrollView setContentOffset:point animated:YES];
+}
+
+#pragma mark - UIScrollViewDelegate
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSInteger page = scrollView.contentOffset.x / screenW + 0.5;
+    self.pageCtrl.currentPage = page;
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self removeTimer];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self addTimer];
+    });
+}
+
+- (void)removeTimer {
+    [self.timer invalidate];
+    self.timer = nil;
 }
 
 - (void)didReceiveMemoryWarning {
