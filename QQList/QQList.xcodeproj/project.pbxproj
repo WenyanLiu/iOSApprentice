@@ -16,6 +16,7 @@
 		5593590B1D688AB3000084F0 /* Friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5593590A1D688AB3000084F0 /* Friends.plist */; };
 		5593590E1D688B44000084F0 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593590D1D688B44000084F0 /* GroupModel.m */; };
 		559359111D688B5C000084F0 /* FriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 559359101D688B5C000084F0 /* FriendModel.m */; };
+		559359141D6A03B1000084F0 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559359131D6A03B1000084F0 /* ListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		5593590D1D688B44000084F0 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
 		5593590F1D688B5C000084F0 /* FriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendModel.h; sourceTree = "<group>"; };
 		559359101D688B5C000084F0 /* FriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendModel.m; sourceTree = "<group>"; };
+		559359121D6A03B1000084F0 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		559359131D6A03B1000084F0 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		559359091D688A96000084F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				559359121D6A03B1000084F0 /* ListTableViewController.h */,
+				559359131D6A03B1000084F0 /* ListTableViewController.m */,
 			);
 			name = Controller;
 			path = QQList/Controller;
@@ -195,6 +200,7 @@
 				5593590E1D688B44000084F0 /* GroupModel.m in Sources */,
 				559358F41D688953000084F0 /* AppDelegate.m in Sources */,
 				559358F11D688953000084F0 /* main.m in Sources */,
+				559359141D6A03B1000084F0 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

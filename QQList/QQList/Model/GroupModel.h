@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString *online;
 @property (nonatomic, strong) NSArray *friends;
 @property (nonatomic, strong) FriendModel *friendModel;
+@property (nonatomic, assign) BOOL isExpand;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)groupWithDict:(NSDictionary *)dict;
